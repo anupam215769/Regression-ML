@@ -26,4 +26,54 @@ Where,
 
 **b1 = It is the slope of the regression line, which tells whether the line is increasing or decreasing.**
 
-![linear regression](https://i.ibb.co/vxw8LsZ/Screenshot-27.png)
+
+![simple linear regression](https://i.ibb.co/vxw8LsZ/Screenshot-27.png)
+
+
+## Multiple Linear Regression
+
+Multiple Linear Regression is an extension of Simple Linear regression as it takes more than one predictor variable to predict the response variable. We can define it as:
+
+***Multiple Linear Regression is one of the important regression algorithms which models the linear relationship between a single dependent continuous variable and more than one independent variable.***
+
+```
+y = b0 + b1*x1 + b2*x2 + b3*x3 + ... (+ b4*d1 + b5*d2 + ...)
+```
+
+Where,
+
+**y = Output/Response/Dependent variable**
+
+**b0, b1, b2, b3, ... bn = Coefficients of the model**
+
+**x1, x2, x3, x4, ... xn = Various Independent/feature variable**
+
+**d1, d2, d3, ... bn-1 = Dummy variables**
+
+How is the coefficient b0 related to the dummy variable trap?
+Since D2 = 1 − D1 then if you include both D1 and D2 you get:
+
+                          y = b0 + b1x1 + b2x2 + b3x3 + b4D1 + b5D2
+                            = b0 + b1x1 + b2x2 + b3x3 + b4D1 + b5(1 − D1)
+                            = b0 + b5 + b1x1 + b2x2 + b3x3 + (b4 − b5)D1
+                            = *b0 + b1x1 + b2x2 + b3x3 + *b4D1
+                            
+with *b0 = b0 + b5 and *b4 = b4 − b5
+
+Therefore the information of the redundant dummy variable D2 is going into the constant b0.
+
+
+>Note - If there are N dummy variable table, omit one and consider only N-1 tables
+
+![multiple linear regression](https://i.imgur.com/GHAtNx9.png)
+
+
+## Polynomial Regression
+
+Polynomial Regression is a regression algorithm that models the relationship between a dependent(y) and independent variable(x) as nth degree polynomial. The Polynomial Regression equation is given below:
+
+![multiple linear regression](https://i.imgur.com/H9vVcQf.png)
+
+Hence, ***"In Polynomial regression, the original features are converted into Polynomial features of required degree (2,3,..,n) and then modeled using a linear model."***
+
+
