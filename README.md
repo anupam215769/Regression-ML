@@ -76,7 +76,13 @@ Polynomial Regression is a regression algorithm that models the relationship bet
 
 Hence, ***"In Polynomial regression, the original features are converted into Polynomial features of required degree (2,3,..,n) and then modeled using a linear model."***
 
+**How to find best degree?** 
+
+The main form of finding a good fit is to plot the model and see what it looks like visually. You simply test several degrees and you see which one gives you the best fit. The other option is to find the lowest root-mean-square error (RMSE) for your model, but in that case be careful not to overfit the data.
+
 > Note: A Polynomial Regression algorithm is also called Polynomial Linear Regression because it does not depend on the variables, instead, it depends on the coefficients, which are arranged in a linear fashion.
+
+#### Feature Scaling is not needed because, since y is a linear combination of x and x 2 , the coefficients can adapt their scale to put everything on the same scale. For example if y takes values between 0 and 1, x takes values between 1 and 10 and x 2 takes values between 1 and 100, then b1 can be multiplied by 0.1 and b2 can be multiplied by 0.01 so that y, b1x1 and b2x2 are all on the same scale
 
 ![poly](https://i.ytimg.com/vi/2wzxzHoW-sg/maxresdefault.jpg)
 
