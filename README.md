@@ -87,3 +87,17 @@ The main form of finding a good fit is to plot the model and see what it looks l
 ![poly](https://i.ytimg.com/vi/2wzxzHoW-sg/maxresdefault.jpg)
 
 
+## Support Vector Regression (SVR)
+
+Support Vector Regression is a supervised learning algorithm that is used to predict discrete values. Support Vector Regression uses the same principle as the SVMs. 
+
+The basic idea behind SVR is to find the best fit line. Support Vector Regression is a supervised learning algorithm that is used to predict discrete values. Support Vector Regression uses the same principle as the SVMs. The basic idea behind SVR is to find the best fit line.
+
+**when to use SVR?**
+
+You should use SVR if a linear model like linear regression doesn’t fit very well your data. This would mean you are dealing with a non linear problem, where your data is not linearly distributed. Therefore in that case SVR could be a much better solution
+
+![svr](https://i.imgur.com/9GlOzLC.png)
+
+
+
