@@ -114,3 +114,40 @@ It uses reduction of standard deviation of the predictions. In other words, the 
 
 ![dtr](https://i.imgur.com/KuBsA7g.png)
 
+
+
+## Random Forest Regression
+
+
+Random Forest Regression is a supervised learning algorithm that uses ensemble learning method for regression. Ensemble learning method is a technique that combines predictions from multiple machine learning algorithms to make a more accurate prediction than a single model.
+
+Every decision tree has high variance, but when we combine all of them together in parallel then the resultant variance is low as each decision tree gets perfectly trained on that particular sample data and hence the output doesn’t depend on one decision tree but multiple decision trees.
+
+![dtr](https://miro.medium.com/max/875/1*ZFuMI_HrI3jt2Wlay73IUQ.png)
+
+## Comparison
+
+| Regression Model         | Pros                                                                                     | Cons                                                                                  |
+|--------------------------|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| Linear Regression        | Works on any size of dataset, gives informations about relevance of features             | The Linear Regression Assumptions                                                     |
+| Polynomial Regression    | Works on any size of dataset, works very well on non linear problems                     | Need to choose the right polynomial degree for a good bias/variance tradeoff          |
+| SVR                      | Easily adaptable, works very well on non linear problems, not biased by outliers         | Compulsory to apply feature scaling, not well known, more difficult to understand     |
+| Decision Tree Regression | Interpretability, no need for feature scaling, works on both linear / nonlinear problems | Poor results on too small datasets, overfitting can easily occur                      |
+| Random Forest Regression | Powerful and accurate, good performance on many problems, including non linear           | No interpretability, overfitting can easily occur, need to choose the number of trees |
+
+
+## Related Repositories
+
+### [Data Preprocessing](https://github.com/anupam215769/Data-Preprocessing-ML)
+
+## Credit
+
+**Coded By**
+
+[Anupam Verma](https://github.com/anupam215769)
+
+<a href="https://github.com/anupam215769/Regression-ML/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=anupam215769/Regression-ML" />
+</a>
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anupam-verma-383855223/)
