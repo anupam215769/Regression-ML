@@ -76,4 +76,8 @@ Polynomial Regression is a regression algorithm that models the relationship bet
 
 Hence, ***"In Polynomial regression, the original features are converted into Polynomial features of required degree (2,3,..,n) and then modeled using a linear model."***
 
+> Note: A Polynomial Regression algorithm is also called Polynomial Linear Regression because it does not depend on the variables, instead, it depends on the coefficients, which are arranged in a linear fashion.
+
+![poly](https://i.ytimg.com/vi/2wzxzHoW-sg/maxresdefault.jpg)
+
 
