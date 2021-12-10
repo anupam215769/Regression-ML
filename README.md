@@ -100,4 +100,17 @@ You should use SVR if a linear model like linear regression doesn’t fit very w
 ![svr](https://i.imgur.com/9GlOzLC.png)
 
 
+## Decision Tree Regression
+
+Decision tree builds regression or classification models in the form of a tree structure. It breaks down a dataset into smaller and smaller subsets while at the same time an associated decision tree is incrementally developed. The final result is a tree with **decision nodes** and **leaf nodes**. 
+
+A decision node has two or more branches, each representing values for the attribute tested. Leaf node represents a decision on the numerical target. The topmost decision node in a tree which corresponds to the best predictor called **root node**. Decision trees can handle both categorical and numerical data. 
+
+![dtr](https://i.imgur.com/u4unj7u.png)
+
+**How does the algorithm split the data points?**
+
+It uses reduction of standard deviation of the predictions. In other words, the standard deviation is decreased right after a split. Hence, building a decision tree is all about finding the attribute that returns the highest standard deviation reduction (i.e., the most homogeneous branches)
+
+![dtr](https://i.imgur.com/KuBsA7g.png)
 
