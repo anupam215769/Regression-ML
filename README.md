@@ -4,6 +4,20 @@ Regression is a [Supervised Learning](https://en.wikipedia.org/wiki/Supervised_l
 
 In Regression, we plot a graph between the variables which best fits the given datapoints, using this plot, the machine learning model can make predictions about the data. In simple words, "***Regression shows a line or curve that passes through all the datapoints on target-predictor graph in such a way that the vertical distance between the datapoints and the regression line is minimum.***" The distance between datapoints and line tells whether a model has captured a strong relationship or not.
 
+### Simple Linear Regression [Code](https://github.com/anupam215769/Regression-ML/blob/main/Simple%20Linear%20Regression/Simple-Linear-Regression.ipynb) OR <a href="https://colab.research.google.com/github/anupam215769/Regression-ML/blob/main/Simple%20Linear%20Regression/Simple-Linear-Regression.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+### Multiple Linear Regression [Code](https://github.com/anupam215769/Regression-ML/blob/main/Multiple%20Linear%20Regression/multiple_linear_regression.ipynb) OR <a href="https://colab.research.google.com/github/anupam215769/Regression-ML/blob/main/Multiple%20Linear%20Regression/multiple_linear_regression.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+### Polynomial Regression [Code](https://github.com/anupam215769/Regression-ML/blob/main/Polynomial%20Regression/polynomial_regression.ipynb) OR <a href="https://colab.research.google.com/github/anupam215769/Regression-ML/blob/main/Polynomial%20Regression/polynomial_regression.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+### Support Vector Regression (SVR) [Code](https://github.com/anupam215769/Regression-ML/blob/main/Support%20Vector%20Regression%20(SVR)/support_vector_regression.ipynb) OR <a href="https://colab.research.google.com/github/anupam215769/Regression-ML/blob/main/Support%20Vector%20Regression%20(SVR)/support_vector_regression.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+### Decision Tree Regression [Code](https://github.com/anupam215769/Regression-ML/blob/main/Decision%20Tree%20Regression/decision_tree_regression.ipynb) OR <a href="https://colab.research.google.com/github/anupam215769/Regression-ML/blob/main/Decision%20Tree%20Regression/decision_tree_regression.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+### Random Forest Regression [Code](https://github.com/anupam215769/Regression-ML/blob/main/Random%20Forest%20Regression/random_forest_regression.ipynb) OR <a href="https://colab.research.google.com/github/anupam215769/Regression-ML/blob/main/Random%20Forest%20Regression/random_forest_regression.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+>Don't forget to add Required Data files in colab. Otherwise it won't work.
+
 ## Simple Linear Regression
 
 Simple Linear Regression is a type of Regression algorithms that models the relationship between a dependent variable and a single independent variable. The relationship shown by a Simple Linear Regression model is linear or a sloped straight line, hence it is called Simple Linear Regression.
