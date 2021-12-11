@@ -137,6 +137,10 @@ Random Forest Regression is a supervised learning algorithm that uses ensemble l
 
 Every decision tree has high variance, but when we combine all of them together in parallel then the resultant variance is low as each decision tree gets perfectly trained on that particular sample data and hence the output doesn’t depend on one decision tree but multiple decision trees.
 
+```
+g(x) = f0(x) + f1(x) + f2(x) + .... + fn(x)
+```
+
 ![dtr](https://miro.medium.com/max/875/1*ZFuMI_HrI3jt2Wlay73IUQ.png)
 
 ## Comparison
