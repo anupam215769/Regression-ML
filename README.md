@@ -158,6 +158,10 @@ g(x) = f0(x) + f1(x) + f2(x) + .... + fn(x)
 
 ### [Data Preprocessing](https://github.com/anupam215769/Data-Preprocessing-ML)
 
+### [Classification](https://github.com/anupam215769/Classification-ML)
+
+### [Clustering](https://github.com/anupam215769/Clustering-ML)
+
 ## Credit
 
 **Coded By**
