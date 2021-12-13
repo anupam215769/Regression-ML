@@ -143,6 +143,82 @@ g(x) = f0(x) + f1(x) + f2(x) + .... + fn(x)
 
 ![dtr](https://miro.medium.com/max/875/1*ZFuMI_HrI3jt2Wlay73IUQ.png)
 
+
+## Evaluating Regression Models Performance
+
+### R-squared
+
+R-squared statistic or coefficient of determination is a scale invariant statistic that gives the proportion of variation in target variable explained by the linear regression model.
+
+- **Total Sum of Squares** - Total variation in target variable is the sum of squares of the difference between the actual values and their mean.
+
+![formula](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/TSSchange.png)
+
+- **Residual Sum of Squares** - RSS gives us the total square of the distance of actual points from the regression line.
+
+- **Calculate R-Squared** - 
+
+          R-squared = (TSS-RSS)/TSS
+
+                    = Explained variation/ Total variation
+
+                    = 1 – Unexplained variation/ Total variation
+                    
+                    
+If we have a really low RSS value, it would mean that the regression line was very close to the actual points. This means the independent variables explain the majority of variation in the target variable. In such a case, we would have a really high R-squared value.
+
+![for](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/R2-decrease.png)
+
+On the contrary, if we have a really high RSS value, it would mean that the regression line was far away from the actual points. Thus, independent variables fail to explain the majority of variation in the target variable. This would give us a really low R-squared value.
+
+![for](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/R2-increase.png)
+
+So, this explains why the R-squared value gives us the variation in the target variable given by the variation in independent variables.
+
+#### Problems with R-squared statistic
+
+The R-squared statistic isn’t perfect. In fact, it suffers from a major flaw. Its value never decreases no matter the number of variables we add to our regression model. That is, even if we are adding redundant variables to the data, the value of R-squared does not decrease. It either remains the same or increases with the addition of new independent variables. This clearly does not make sense because some of the independent variables might not be useful in determining the target variable. Adjusted R-squared deals with this issue.
+
+
+### Adjusted R-squared
+
+The Adjusted R-squared takes into account the number of independent variables used for predicting the target variable. In doing so, we can determine whether adding new variables to the model actually increases the model fit.
+
+![adjusted](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/edit.png)
+
+Here,
+
+- **n** represents the number of data points in our dataset
+- **k** represents the number of independent variables, and
+- **R** represents the R-squared values determined by the model.
+
+
+So, if R-squared does not increase significantly on the addition of a new independent variable, then the value of Adjusted R-squared will actually decrease.
+
+![adj](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/edit1.png)
+
+On the other hand, if on adding the new independent variable we see a significant increase in R-squared value, then the Adjusted R-squared value will also increase.
+
+![ad](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/edit2.png)
+
+
+We can see the difference between R-squared and Adjusted R-squared values if we add a random independent variable to our model.
+
+![result](https://cdn.analyticsvidhya.com/wp-content/uploads/2020/07/result.png)
+
+As you can see, adding a random independent variable did not help in explaining the variation in the target variable. Our R-squared value remains the same. Thus, giving us a false indication that this variable might be helpful in predicting the output. However, the Adjusted R-squared value decreased which indicated that this new variable is actually not capturing the trend in the target variable.
+
+
+#### Code
+
+```
+from sklearn.metrics import r2_score
+r2_score(y_test, y_pred)
+```
+
+
+
+
 ## Comparison
 
 | Regression Model         | Pros                                                                                     | Cons                                                                                  |
@@ -173,3 +249,5 @@ g(x) = f0(x) + f1(x) + f2(x) + .... + fn(x)
 </a>
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anupam-verma-383855223/)
+
+
